@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bs.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/datatable-5.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-kasir">
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./dashboard.html">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm.16 14a6.981 6.981 0 0 0-5.147 2.256A7.966 7.966 0 0 0 12 20a7.97 7.97 0 0 0 5.167-1.892A6.979 6.979 0 0 0 12.16 16ZM12 4a8 8 0 0 0-6.384 12.821A8.975 8.975 0 0 1 12.16 14a8.972 8.972 0 0 1 6.362 2.634A8 8 0 0 0 12 4Zm0 1a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <span>Admin</span>
+                            </button>
+                            <ul class="dropdown-menu no-bor">
+                                <li><a class="dropdown-item d-flex" href="./kasir.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 14 14">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path
+                                                    d="M6.5 11h1M10 5V3m2-1.25A1.25 1.25 0 0 1 10.75 3h-1.5a1.25 1.25 0 0 1 0-2.5h1.5A1.25 1.25 0 0 1 12 1.75ZM5.5 5V1.5h-3V5" />
+                                                <rect width="13" height="5" x=".5" y="8.5" rx="1" />
+                                                <path d="M12.5 8.5V6a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v2.5" />
+                                            </g>
+                                        </svg><span class="ms-2 py-auto">Kasir</span></a></li>
+                                <li><a class="dropdown-item d-flex" href="./setting.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M3.34 17a10.017 10.017 0 0 1-.979-2.326a3 3 0 0 0 .003-5.347a9.99 9.99 0 0 1 2.5-4.337a3 3 0 0 0 4.632-2.674a9.99 9.99 0 0 1 5.007.003a3 3 0 0 0 4.632 2.671a10.056 10.056 0 0 1 2.503 4.336a3 3 0 0 0-.002 5.347a9.99 9.99 0 0 1-2.501 4.337a3 3 0 0 0-4.632 2.674a9.99 9.99 0 0 1-5.007-.002a3 3 0 0 0-4.631-2.672A10.018 10.018 0 0 1 3.339 17Zm5.66.196a4.992 4.992 0 0 1 2.25 2.77c.499.047 1 .048 1.499.002a4.993 4.993 0 0 1 2.25-2.772a4.993 4.993 0 0 1 3.526-.564c.29-.408.54-.843.748-1.298A4.993 4.993 0 0 1 18 12c0-1.26.47-2.437 1.273-3.334a8.152 8.152 0 0 0-.75-1.298A4.993 4.993 0 0 1 15 6.804a4.993 4.993 0 0 1-2.25-2.77c-.5-.047-1-.048-1.5-.001A4.993 4.993 0 0 1 9 6.804a4.993 4.993 0 0 1-3.526.564c-.29.408-.54.843-.747 1.298A4.993 4.993 0 0 1 6 12c0 1.26-.471 2.437-1.273 3.334a8.16 8.16 0 0 0 .75 1.298A4.993 4.993 0 0 1 9 17.196ZM12 15a3 3 0 1 1 0-6a3 3 0 0 1 0 6Zm0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z" />
+                                        </svg><span class="ms-2 py-auto">Setting</span></a></li>
+                                <li><a class="dropdown-item d-flex" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5 11h8v2H5v3l-5-4l5-4v3Zm-1 7h2.708a8 8 0 1 0 0-12H4a9.985 9.985 0 0 1 8-4c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4Z" />
+                                        </svg><span class="ms-2 py-auto">Logout</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <h5>Tambah User Kasir</h5>
+                        <form class="mt-3">
+                            <label>Nama Lengkap</label>
+                            <input class="form-control mb-3 mt-2" type="text" placeholder="Masukan nama lengkap">
+                            <label>No Telepon</label>
+                            <input class="form-control mb-3 mt-2" type="text" placeholder="Masukan nomor telepon">
+                            <label>Posisi</label>
+                            <select class="form-select mb-3 mt-2" aria-label="Default select example">
+                                <option selected>Pilih Posisi ...</option>
+                                <option value="1">Kasir</option>
+                                <option value="2">Admin</option>
+                            </select>
+                            <label>Username</label>
+                            <input class="form-control mb-3 mt-2" type="text" placeholder="Masukan username">
+                            <label>Password</label>
+                            <input class="form-control mb-3 mt-2" type="password" placeholder="Masukan password">
+                            <button class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                    height="22" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M18 19h1V6.828L17.172 5H16v4H7V5H5v14h1v-7h12v7ZM4 3h14l2.707 2.707a1 1 0 0 1 .293.707V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm4 11v5h8v-5H8Z" />
+                                </svg> Simpan</button>
+                            <a href="./dashboard.html" class="btn btn-primary ms-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="m5.828 7l2.536 2.535L6.95 10.95L2 6l4.95-4.95l1.414 1.415L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 0 0 0-12H5.828Z" />
+                                </svg> Kembali</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <h5>User Table</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nama</th>
+                                        <th>Nomor Telepon</th>
+                                        <th>Posisi</th>
+                                        <th>Username</th>
+                                        <th>Password</th>
+                                        <th style="width: 20%;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1234</td>
+                                        <td>Fadli ali Kipli</td>
+                                        <td>0812361253</td>
+                                        <td>Kasir</td>
+                                        <td>Fadli</td>
+                                        <td>Asdsws</td>
+                                        <td class="d-flex">
+                                            <button class="btn btn-secondary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M5 18.89h1.414l9.314-9.314l-1.414-1.414L5 17.476v1.414Zm16 2H3v-4.243L16.435 3.212a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L9.243 18.89H21v2ZM15.728 6.748l1.414 1.414l1.414-1.414l-1.414-1.414l-1.414 1.414Z" />
+                                                </svg> Edit
+                                            </button>
+                                            <button class="btn btn-danger ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M4 8h16v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8Zm2 2v10h12V10H6Zm3 2h2v6H9v-6Zm4 0h2v6h-2v-6ZM7 5V3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2h5v2H2V5h5Zm2-1v1h6V4H9Z" />
+                                                </svg> Delete
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- js -->
+    <script src="../assets/js/bs.js"> </script>
+    <script src="../assets/js/script.js"> </script>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/datatable-5.js"></script>
+    <script src="../assets/js/datatable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+
+    <!-- script -->
+
+</body>
+
+</html>

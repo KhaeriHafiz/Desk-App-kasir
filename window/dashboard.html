@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bs.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/datatable-5.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="bg-kasir">
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm.16 14a6.981 6.981 0 0 0-5.147 2.256A7.966 7.966 0 0 0 12 20a7.97 7.97 0 0 0 5.167-1.892A6.979 6.979 0 0 0 12.16 16ZM12 4a8 8 0 0 0-6.384 12.821A8.975 8.975 0 0 1 12.16 14a8.972 8.972 0 0 1 6.362 2.634A8 8 0 0 0 12 4Zm0 1a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <span>Admin</span>
+                            </button>
+                            <ul class="dropdown-menu no-bor">
+                                <li><a class="dropdown-item d-flex" href="./kasir.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 14 14">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <path
+                                                    d="M6.5 11h1M10 5V3m2-1.25A1.25 1.25 0 0 1 10.75 3h-1.5a1.25 1.25 0 0 1 0-2.5h1.5A1.25 1.25 0 0 1 12 1.75ZM5.5 5V1.5h-3V5" />
+                                                <rect width="13" height="5" x=".5" y="8.5" rx="1" />
+                                                <path d="M12.5 8.5V6a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1v2.5" />
+                                            </g>
+                                        </svg><span class="ms-2 py-auto">Kasir</span></a></li>
+                                <li><a class="dropdown-item d-flex" href="./setting.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M3.34 17a10.017 10.017 0 0 1-.979-2.326a3 3 0 0 0 .003-5.347a9.99 9.99 0 0 1 2.5-4.337a3 3 0 0 0 4.632-2.674a9.99 9.99 0 0 1 5.007.003a3 3 0 0 0 4.632 2.671a10.056 10.056 0 0 1 2.503 4.336a3 3 0 0 0-.002 5.347a9.99 9.99 0 0 1-2.501 4.337a3 3 0 0 0-4.632 2.674a9.99 9.99 0 0 1-5.007-.002a3 3 0 0 0-4.631-2.672A10.018 10.018 0 0 1 3.339 17Zm5.66.196a4.992 4.992 0 0 1 2.25 2.77c.499.047 1 .048 1.499.002a4.993 4.993 0 0 1 2.25-2.772a4.993 4.993 0 0 1 3.526-.564c.29-.408.54-.843.748-1.298A4.993 4.993 0 0 1 18 12c0-1.26.47-2.437 1.273-3.334a8.152 8.152 0 0 0-.75-1.298A4.993 4.993 0 0 1 15 6.804a4.993 4.993 0 0 1-2.25-2.77c-.5-.047-1-.048-1.5-.001A4.993 4.993 0 0 1 9 6.804a4.993 4.993 0 0 1-3.526.564c-.29.408-.54.843-.747 1.298A4.993 4.993 0 0 1 6 12c0 1.26-.471 2.437-1.273 3.334a8.16 8.16 0 0 0 .75 1.298A4.993 4.993 0 0 1 9 17.196ZM12 15a3 3 0 1 1 0-6a3 3 0 0 1 0 6Zm0-2a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z" />
+                                        </svg><span class="ms-2 py-auto">Setting</span></a></li>
+                                <li><a class="dropdown-item d-flex" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5 11h8v2H5v3l-5-4l5-4v3Zm-1 7h2.708a8 8 0 1 0 0-12H4a9.985 9.985 0 0 1 8-4c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.985 9.985 0 0 1-8-4Z" />
+                                        </svg><span class="ms-2 py-auto">Logout</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="link-navi d-flex">
+        <a href="./dashboard.html" class="btn linked ms-auto li-active"><svg xmlns="http://www.w3.org/2000/svg"
+                width="20" height="20" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M19 21H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1Zm-6-2h5V9.158l-6-5.455l-6 5.455V19h5v-6h2v6Z" />
+            </svg><b class="ms-2">Home</b></a>
+        <a href="./stock.html" class="btn linked"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M11 7h2v10h-2V7Zm4 4h2v6h-2v-6Zm-8 2h2v4H7v-4Zm8-9H5v16h14V8h-4V4ZM3 2.992C3 2.444 3.447 2 3.998 2H16l5 5v13.992A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992Z" />
+            </svg><b class="ms-2">Stok Barang</b></a>
+        <a href="./laporan.html" class="btn linked me-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                height="20" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                    d="M17 2a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-3v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2H3a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1h10Zm-1 15H8v3h8v-3Zm4-8H4v8h2v-1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1h2V9ZM8 10v2H5v-2h3Zm8-6H8v3h8V4Z" />
+            </svg><b class="ms-2">Laporan</b></a>
+    </div>
+    <section class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <span>Total Penjualan</span>
+                        <div class="d-flex">
+                            <svg class="my-auto me-3" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M4.005 16V4h-2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8.005V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5.004a1 1 0 0 1-1-1Zm2 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4Zm12 0a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z" />
+                            </svg>
+                            <span class="text-s">1070</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <span>Stok Barang</span>
+                        <div class="d-flex">
+                            <svg class="my-auto me-3" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+                                viewBox="0 0 256 256">
+                                <g fill="currentColor">
+                                    <path
+                                        d="M128 129.09V232a8 8 0 0 1-3.84-1l-88-48.18a8 8 0 0 1-4.16-7V80.18a8 8 0 0 1 .7-3.25Z"
+                                        opacity=".2" />
+                                    <path
+                                        d="m223.68 66.15l-88-48.15a15.88 15.88 0 0 0-15.36 0l-88 48.17a16 16 0 0 0-8.32 14v95.64a16 16 0 0 0 8.32 14l88 48.17a15.88 15.88 0 0 0 15.36 0l88-48.17a16 16 0 0 0 8.32-14V80.18a16 16 0 0 0-8.32-14.03ZM128 32l80.34 44l-29.77 16.3l-80.35-44Zm0 88L47.66 76l33.9-18.56l80.34 44ZM40 90l80 43.78v85.79l-80-43.75Zm176 85.78l-80 43.79v-85.75l32-17.51V152a8 8 0 0 0 16 0v-44.45L216 90v85.77Z" />
+                                </g>
+                            </svg>
+                            <span class="text-s">4016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <span>Total Pemasukan</span>
+                        <div class="d-flex">
+                            <svg class="my-auto me-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M0 64c0-17.7 14.3-32 32-32h80c79.5 0 144 64.5 144 144c0 58.8-35.2 109.3-85.7 131.7l51.4 128.4c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8l-56-139.9H64v128c0 17.7-14.3 32-32 32S0 465.7 0 448V64zm64 192h48c44.2 0 80-35.8 80-80s-35.8-80-80-80H64v160zm256-96h80c61.9 0 112 50.1 112 112s-50.1 112-112 112h-48v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32zm80 160c26.5 0 48-21.5 48-48s-21.5-48-48-48h-48v96h48z" />
+                            </svg>
+                            <span class="text-s">1.750.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <span>Pengeluaran</span>
+                        <div class="d-flex">
+                            <svg class="my-auto me-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M0 64c0-17.7 14.3-32 32-32h80c79.5 0 144 64.5 144 144c0 58.8-35.2 109.3-85.7 131.7l51.4 128.4c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8l-56-139.9H64v128c0 17.7-14.3 32-32 32S0 465.7 0 448V64zm64 192h48c44.2 0 80-35.8 80-80s-35.8-80-80-80H64v160zm256-96h80c61.9 0 112 50.1 112 112s-50.1 112-112 112h-48v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32zm80 160c26.5 0 48-21.5 48-48s-21.5-48-48-48h-48v96h48z" />
+                            </svg>
+                            <span class="text-s">950.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <span>Banyak Kasir</span>
+                        <div class="d-flex">
+                            <svg class="my-auto me-3" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+                                viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 22h-2v-2a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v2H4v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2Zm-8-9a6 6 0 1 1 0-12a6 6 0 0 1 0 12Zm0-2a4 4 0 1 0 0-8a4 4 0 0 0 0 8Z" />
+                            </svg>
+                            <span class="text-s">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <h5>Grafik Penjualan</h5>
+                        <ul class="nav nav-tabs pt-2" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Harian</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Bulanan</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                    aria-controls="contact-tab-pane" aria-selected="false">Tahunan</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <div class="mx-auto chart-container flex"
+                                    style="position: relative; height:300px; width:100%;">
+                                    <canvas id="chartLineDay"></canvas>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <div class="mx-auto chart-container flex"
+                                    style="position: relative; height:300px; width:100%;">
+                                    <canvas id="chartLineMonth"></canvas>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                aria-labelledby="contact-tab" tabindex="0">
+                                <div class="mx-auto chart-container flex"
+                                    style="position: relative; height:300px; width:100%;">
+                                    <canvas id="chartLineYear"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card no-bor">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Barang Populer</h5>
+                                <div class="mx-auto chart-container flex"
+                                    style="position: relative; height:350px; width:100%;">
+                                    <canvas id="chartPopular"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <h5>Transaksi Terbaru</h5>
+                                <table class="table table-sm table-bordered table-striped ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Id</th>
+                                            <th scope="col">Tanggal</th>
+                                            <th scope="col">Harga</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">48220</th>
+                                            <td>17:08:00</td>
+                                            <td>Rp. 100.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">19028</th>
+                                            <td>15:31:17</td>
+                                            <td>Rp. 20.000</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">76541</th>
+                                            <td>15:20:17</td>
+                                            <td>Rp. 10.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="../assets/js/bs.js"> </script>
+    <script src="../assets/js/script.js"> </script>
+    <script src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/datatable-5.js"></script>
+    <script src="../assets/js/datatable.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+
+    <!-- script -->
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                // dom: '<"#positionFilter">t',
+                "bProcessing": true,
+                "sAutoWidth": false,
+                "bDestroy": true,
+                // "sPaginationType": "bootstrap", // full_numbers
+                "iDisplayStart ": 15,
+                "iDisplayLength": 15,
+                // "bPaginate": false, //hide pagination
+                "bFilter": false, //hide Search bar
+                // "bInfo": false, // hide showing entries
+            });
+            $('#searchInput').on('input', function () {
+                var searchTerm = $(this).val().toLowerCase();
+                $('#myTable tbody tr').each(function () {
+                    var rowText = $(this).text().toLowerCase();
+                    if (rowText.includes(searchTerm)) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            });
+            $('#myTable').on('click', 'tbody tr', function () {
+                window.location.href = $(this).data('href');
+            });
+        });
+    </script>
+    <!-- table -->
+    <script>
+        // Chart Chart
+        // setup
+        const dataday = {
+            labels: ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', ' Minggu'],
+            datasets: [{
+                label: 'Harian',
+                data: [65, 59, 80, 81, 56, 55, 50, ],
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        // config
+        const configday = {
+            type: 'line',
+            data: dataday,
+            option: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'left'
+                    }
+                },
+            }
+        };
+
+        // render init block
+        const chartLineDay = new Chart(
+            document.getElementById('chartLineDay'),
+            configday
+        );
+
+        // setup
+        const datamonth = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Ag', 'Sep', 'Oct', 'Nov', 'Dec'],
+            datasets: [{
+                label: 'Bulanan',
+                data: [145, 98, 80, 111, 256, 155, 90, 30, 100, 320, 150, 130],
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        // config
+        const configmonth = {
+            type: 'line',
+            data: datamonth,
+            option: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'left'
+                    }
+                },
+            }
+        };
+
+        // render init block
+        const chartLineMonth = new Chart(
+            document.getElementById('chartLineMonth'),
+            configmonth
+        );
+
+        // setup
+        const datayear = {
+            labels: ['2019', '2020', '2021', '2022'],
+            datasets: [{
+                label: 'Tahunan',
+                data: [1450, 980, 800, 1110],
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        // config
+        const configyear = {
+            type: 'line',
+            data: datayear,
+            option: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'left'
+                    }
+                },
+            }
+        };
+
+        // render init block
+        const chartLineYear = new Chart(
+            document.getElementById('chartLineYear'),
+            configyear
+        );
+
+        const datapopular = {
+            labels: [
+                'Beras',
+                'Batu',
+                'Santan'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [300, 50, 100],
+                backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4
+            }]
+        };
+
+        const configpopular = {
+            type: 'doughnut',
+            data: datapopular,
+            option: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false,
+                        position: 'bottom'
+                    }
+                },
+            }
+        };
+
+        const chartPopular = new Chart(
+            document.getElementById('chartPopular'),
+            configpopular
+        );
+
+        // END Chart Chart
+    </script>
+
+</body>
+
+</html>
